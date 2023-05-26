@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+
   before_action :set_list, only: %i[show edit update destroy]
 
   def index
@@ -7,13 +8,7 @@ class ListsController < ApplicationController
   end
 
   def show
-
-  end
-
-  private
-
-  def restaurant_params
-    params.require(:list).permit(:name)
+    
   end
 
   def new
